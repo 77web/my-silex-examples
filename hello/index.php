@@ -1,5 +1,7 @@
 <?php
 
+//hello/index.php/hello/foo
+
 require_once dirname(__DIR__).'/silex.phar';
 
 $app = new Silex\Application();
