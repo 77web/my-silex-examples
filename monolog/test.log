@@ -1,0 +1,2 @@
+[2011-05-14 23:21:17] myapp.INFO: GET /silex/monolog/index.php/hello-log/test 
+[2011-05-14 23:21:17] myapp.DEBUG: name: test 
