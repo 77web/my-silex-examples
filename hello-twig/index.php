@@ -8,7 +8,7 @@ $app = new Silex\Application();
 
 //twig
 use Silex\Extension\TwigExtension;
-$app->register(new TwigExtension(), array('twig.path'=>dirname(__DIR__).'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
+$app->register(new TwigExtension(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
 
 //routings
 $app->get('/hello-twig/{name}', function($name) use ($app){ 
