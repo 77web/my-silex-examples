@@ -1,0 +1,5 @@
+<ul>
+{% for err in errors %}
+  <li>{{ err.message }}:"{{ err.invalidValue }}"</li>
+{% endfor %}
+</ul>
