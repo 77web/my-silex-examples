@@ -10,3 +10,6 @@
 [submodule "vendor/monolog"]
 	path = vendor/monolog
 	url = git://github.com/Seldaek/monolog.git
+[submodule "vendor/symfony"]
+	path = vendor/symfony
+	url = git://github.com/symfony/symfony.git
