@@ -1,8 +1,5 @@
 <?php
-// url-gen/index.php/sitemap
-// url-gen/index.php/
-// url-gen/index.php/page
-// url-gen/index.php/link
+// url-gen/index.php/sitemap ==> click links and confirm!
 
 require_once dirname(__DIR__).'/silex.phar';
 
