@@ -13,3 +13,6 @@
 [submodule "vendor/symfony"]
 	path = vendor/symfony
 	url = git://github.com/symfony/symfony.git
+[submodule "vendor/doctrine-orm"]
+	path = vendor/doctrine-orm
+	url = git://github.com/doctrine/doctrine2.git
