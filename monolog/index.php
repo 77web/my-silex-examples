@@ -7,12 +7,12 @@ require_once dirname(__DIR__).'/silex.phar';
 $app = new Silex\Application();
 
 //twig
-use Silex\Extension\TwigExtension;
-$app->register(new TwigExtension(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
+use Silex\Provider\TwigServiceProvider;
+$app->register(new TwigServiceProvider(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
 
 //monolog
-use Silex\Extension\MonologExtension;
-$app->register(new MonologExtension(), array('monolog.logfile'=>__DIR__.'/test.log', 'monolog.class_path'=>dirname(__DIR__).'/vendor/monolog/src'));
+use Silex\Provider\MonologServiceProvider;
+$app->register(new MonologServiceProvider(), array('monolog.logfile'=>__DIR__.'/test.log', 'monolog.class_path'=>dirname(__DIR__).'/vendor/monolog/src'));
 
 
 //routings

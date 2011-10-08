@@ -1,2 +1,4 @@
 [2011-05-14 23:21:17] myapp.INFO: GET /silex/monolog/index.php/hello-log/test 
 [2011-05-14 23:21:17] myapp.DEBUG: name: test 
+[2011-10-08 16:07:57] myapp.INFO: GET /silex/monolog/index.php/hello-log/test [] []
+[2011-10-08 16:07:57] myapp.DEBUG: name: test [] []
