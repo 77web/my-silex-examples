@@ -6,12 +6,12 @@ require_once dirname(__DIR__).'/silex.phar';
 $app = new Silex\Application();
 
 //twig
-use Silex\Extension\TwigExtension;
-$app->register(new TwigExtension(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
+use Silex\Provider\TwigServiceProvider;
+$app->register(new TwigServiceProvider(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
 
 //url-generator
-use Silex\Extension\UrlGeneratorExtension;
-$app->register(new Silex\Extension\UrlGeneratorExtension());
+use Silex\Provider\UrlGeneratorServiceProvider;
+$app->register(new UrlGeneratorServiceProvider());
 
 
 //routings
