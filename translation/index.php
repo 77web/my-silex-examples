@@ -6,12 +6,12 @@ require_once dirname(__DIR__).'/silex.phar';
 $app = new Silex\Application();
 
 //twig
-use Silex\Extension\TwigExtension;
-$app->register(new TwigExtension(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
+use Silex\Provider\TwigServiceProvider;
+$app->register(new TwigServiceProvider(), array('twig.path'=>__DIR__.'/views', 'twig.class_path'=>dirname(__DIR__).'/vendor/twig/lib'));
 
 //translation
-use Silex\Extension\TranslationExtension;
-$app->register(new TranslationExtension(), array(
+use Silex\Provider\TranslationServiceProvider;
+$app->register(new TranslationServiceProvider(), array(
   'locale_fallback' => 'ja',
   'translation.class_path' => dirname(__DIR__).'/vendor/symfony/src'
 ));
